@@ -5,7 +5,7 @@
 import cv2 
 
 #read the image
-img = cv2.imread("/home/asus-ronak/Desktop/Joy of Python/image processing/finger.jpg")  #find ~/ -name "image2.png"
+img = cv2.imread("/image2.jpeg")  #find ~/ -name "image2.png"
 
 #Preperation of CLAHE
 clahe = cv2.createCLAHE()
@@ -18,7 +18,7 @@ enh_img = clahe.apply(gray_img)
 
 
 #save it a file
-cv2.imwrite("/home/asus-ronak/Desktop/Joy of Python/image processing/fingerout.jpeg", enh_img)
+cv2.imwrite("/image2out.jpeg", enh_img)
 
 print("Done enhancing")
 
