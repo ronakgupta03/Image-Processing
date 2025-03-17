@@ -24,13 +24,13 @@
 from PIL import Image
 
 # Open the image using the full path
-img = Image.open("/home/asus-ronak/Desktop/Joy of Python/image processing/image1.png")
+img = Image.open("/image1.png")
 
 # Flip the image horizontally
 transposed_img = img.transpose(Image.FLIP_LEFT_RIGHT)
 
 # Save the flipped image
-transposed_img.save("/home/asus-ronak/Desktop/Joy of Python/image processing/image1output.png")
+transposed_img.save("/image1output.png")
 
 print("Done Flipping")
 
